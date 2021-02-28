@@ -13,7 +13,7 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - spring-boot-sample-data-jpa-h2-{{ checksum "pom.xml" }}
+            - spring-{{ checksum "pom.xml" }}
 
       - run: mvn dependency:go-offline
 
