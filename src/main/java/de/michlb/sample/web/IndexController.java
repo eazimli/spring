@@ -23,7 +23,7 @@ public class IndexController {
     List<Person> personList = personService.loadAll();
 
     model.addAttribute("personList", personList);
-
-    return "index"; // return index.html Template
+system out println("Hello")
+  return "index"; // return index.html Template
   }
 }
